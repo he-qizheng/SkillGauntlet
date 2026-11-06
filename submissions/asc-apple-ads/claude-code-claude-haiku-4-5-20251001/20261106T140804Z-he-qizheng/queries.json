@@ -1,0 +1,275 @@
+{
+  "schema": "skillgauntlet/queries/1",
+  "queries": [
+    {
+      "id": "q01",
+      "query": "I need to set up asc ads auth with my marketing API credentials and save as 'Marketing' profile",
+      "shouldTrigger": true,
+      "clause": "OAuth profiles",
+      "shares": "",
+      "borrows": "",
+      "note": "Configuring OAuth credentials and saving named profiles is exactly when this skill activates"
+    },
+    {
+      "id": "q02",
+      "query": "我需要检查 asc ads 认证状态，看看 ad-account 有没有配置正确",
+      "shouldTrigger": true,
+      "clause": "OAuth profiles",
+      "shares": "",
+      "borrows": "",
+      "note": "Checking auth status for correct account configuration is an OAuth setup operation"
+    },
+    {
+      "id": "q03",
+      "query": "List all my ad accounts and show me the ACLs to confirm which one I should use",
+      "shouldTrigger": true,
+      "clause": "ad-account discovery",
+      "shares": "",
+      "borrows": "",
+      "note": "Discovering ad accounts and their ACLs is exactly what account discovery covers"
+    },
+    {
+      "id": "q04",
+      "query": "我想要发现 ad-account 987654 下有哪些应用可以用来做广告",
+      "shouldTrigger": true,
+      "clause": "ad-account discovery",
+      "shares": "",
+      "borrows": "",
+      "note": "Finding eligible apps within a specific ad account is an account discovery operation"
+    },
+    {
+      "id": "q05",
+      "query": "Create a paused campaign called 'Test 2026-11-06' with $5 daily budget targeting US",
+      "shouldTrigger": true,
+      "clause": "Platform API v1 campaigns",
+      "shares": "",
+      "borrows": "",
+      "note": "Creating campaigns with specific configuration is a core Platform API v1 campaign operation"
+    },
+    {
+      "id": "q06",
+      "query": "找到所有我的 campaigns 并查看它们的当前状态和预算信息",
+      "shouldTrigger": true,
+      "clause": "Platform API v1 campaigns",
+      "shares": "",
+      "borrows": "",
+      "note": "Listing all campaigns and retrieving their status is a Platform API v1 campaign read operation"
+    },
+    {
+      "id": "q07",
+      "query": "Set up geographic targeting to include US and UK, exclude Canada from this campaign",
+      "shouldTrigger": true,
+      "clause": "targeting",
+      "shares": "",
+      "borrows": "",
+      "note": "Configuring geographic targeting parameters is exactly what targeting operations cover"
+    },
+    {
+      "id": "q08",
+      "query": "我要为这个 ad group 添加关键词，并配置一些负关键词来排除竞争对手",
+      "shouldTrigger": true,
+      "clause": "targeting",
+      "shares": "",
+      "borrows": "",
+      "note": "Managing keywords and negative keywords is within targeting operations"
+    },
+    {
+      "id": "q09",
+      "query": "Generate a daily report for the past 2 weeks grouped by country for all campaigns",
+      "shouldTrigger": true,
+      "clause": "reports",
+      "shares": "",
+      "borrows": "",
+      "note": "Generating performance reports with date ranges and grouping is a reports operation"
+    },
+    {
+      "id": "q10",
+      "query": "查询上个月每日的广告花费、点击数和转化数据",
+      "shouldTrigger": true,
+      "clause": "reports",
+      "shares": "",
+      "borrows": "",
+      "note": "Querying daily spend and performance metrics is a reports analytics operation"
+    },
+    {
+      "id": "q11",
+      "query": "Upload a brand logo asset file and check if it becomes ELIGIBLE for use",
+      "shouldTrigger": true,
+      "clause": "assets",
+      "shares": "",
+      "borrows": "",
+      "note": "Uploading brand assets and verifying eligibility status is an asset management operation"
+    },
+    {
+      "id": "q12",
+      "query": "我需要上传品牌图片资产并等待 Apple 完成处理验证",
+      "shouldTrigger": true,
+      "clause": "assets",
+      "shares": "",
+      "borrows": "",
+      "note": "Uploading and monitoring asset processing status is an assets operation"
+    },
+    {
+      "id": "q13",
+      "query": "Find daily budget optimization recommendations for my underperforming campaigns",
+      "shouldTrigger": true,
+      "clause": "recommendations",
+      "shares": "",
+      "borrows": "",
+      "note": "Querying optimization recommendations from Apple is exactly what this clause covers"
+    },
+    {
+      "id": "q14",
+      "query": "查找所有 campaigns 的性能建议并确认要应用哪些推荐",
+      "shouldTrigger": true,
+      "clause": "recommendations",
+      "shares": "",
+      "borrows": "",
+      "note": "Finding and applying performance recommendations is a recommendations operation"
+    },
+    {
+      "id": "q15",
+      "query": "I've verified the account - delete this test campaign ABC123 with confirmation",
+      "shouldTrigger": true,
+      "clause": "guarded mutations",
+      "shares": "",
+      "borrows": "",
+      "note": "Confirming and executing destructive campaign deletion is a guarded mutation operation"
+    },
+    {
+      "id": "q16",
+      "query": "确认删除 campaign XYZ789，我已经检查过内容和创建日期",
+      "shouldTrigger": true,
+      "clause": "guarded mutations",
+      "shares": "",
+      "borrows": "",
+      "note": "Confirming deletion of a campaign after verification is a guarded mutation"
+    },
+    {
+      "id": "q17",
+      "query": "Make a raw v1 API call to /v1/campaigns/query to get custom metrics",
+      "shouldTrigger": true,
+      "clause": "raw requests",
+      "shares": "",
+      "borrows": "",
+      "note": "Making raw Platform API v1 calls for custom queries is exactly what raw requests cover"
+    },
+    {
+      "id": "q18",
+      "query": "我需要直接调用 Platform API v1 的 /v1/targeting-keywords/query endpoint",
+      "shouldTrigger": true,
+      "clause": "raw requests",
+      "shares": "",
+      "borrows": "",
+      "note": "Calling raw API endpoints directly is a raw requests operation"
+    },
+    {
+      "id": "q19",
+      "query": "Show me how to convert this old v5 'campaigns list' command to Platform API v1",
+      "shouldTrigger": true,
+      "clause": "v5 migration",
+      "shares": "",
+      "borrows": "",
+      "note": "Migrating from v5 to v1 API commands is exactly what v5 migration operations cover"
+    },
+    {
+      "id": "q20",
+      "query": "我的脚本还在使用 asc ads v5 命令，需要帮助一个一个迁移到 v1",
+      "shouldTrigger": true,
+      "clause": "v5 migration",
+      "shares": "",
+      "borrows": "",
+      "note": "Migrating existing v5 scripts to v1 API is a v5 migration operation"
+    },
+    {
+      "id": "q21",
+      "query": "Convert the campaigns report data to CSV and Excel spreadsheet formats",
+      "shouldTrigger": false,
+      "clause": "reports",
+      "shares": "campaigns report",
+      "borrows": "reports",
+      "note": "Data format conversion to CSV/Excel is analytics work; the skill outputs JSON but does not reformat output"
+    },
+    {
+      "id": "q22",
+      "query": "Set up a daily cron job to automatically pause high-spend campaigns",
+      "shouldTrigger": false,
+      "clause": "Platform API v1 campaigns",
+      "shares": "pause campaigns",
+      "borrows": "Platform API v1 campaigns",
+      "note": "Building automation infrastructure is infrastructure work; the skill pauses campaigns on-demand when requested"
+    },
+    {
+      "id": "q23",
+      "query": "Export the list of discovered ad accounts and their ACL permissions to a spreadsheet",
+      "shouldTrigger": false,
+      "clause": "ad-account discovery",
+      "shares": "discovered ad accounts",
+      "borrows": "ad-account discovery",
+      "note": "Exporting discovery results to spreadsheets is BI work; the skill surfaces discovery results in JSON output"
+    },
+    {
+      "id": "q24",
+      "query": "Build an AI system that analyzes recommendations and automatically optimizes bids",
+      "shouldTrigger": false,
+      "clause": "recommendations",
+      "shares": "recommendations",
+      "borrows": "recommendations",
+      "note": "Building AI optimization systems is algorithm development; the skill queries existing recommendations only"
+    },
+    {
+      "id": "q25",
+      "query": "Check if my app meets Apple's content policy requirements for running ads",
+      "shouldTrigger": false,
+      "clause": "assets",
+      "shares": "app",
+      "borrows": "assets",
+      "note": "Policy compliance checking is legal/compliance work; the skill only reports technical eligibility status"
+    },
+    {
+      "id": "q26",
+      "query": "Explain how to implement OAuth for Apple Ads in my Node.js backend service",
+      "shouldTrigger": false,
+      "clause": "OAuth profiles",
+      "shares": "OAuth for Apple Ads",
+      "borrows": "OAuth profiles",
+      "note": "SDK implementation guidance is application development help; the skill uses asc CLI for credential setup"
+    },
+    {
+      "id": "q27",
+      "query": "Use the raw API to fetch campaign metrics and automatically populate a live dashboard",
+      "shouldTrigger": false,
+      "clause": "raw requests",
+      "shares": "raw API",
+      "borrows": "raw requests",
+      "note": "Building dashboards from API data is BI/visualization work; the skill executes raw requests but does not render output"
+    },
+    {
+      "id": "q28",
+      "query": "Configure enforcement rules so I manually review and confirm every campaign update before it executes",
+      "shouldTrigger": false,
+      "clause": "guarded mutations",
+      "shares": "confirm every campaign update",
+      "borrows": "guarded mutations",
+      "note": "Building policy enforcement systems is infrastructure work; the skill prompts for confirmation on risky operations"
+    },
+    {
+      "id": "q29",
+      "query": "Extract our campaign and targeting setup to research how competitors structure similar ads",
+      "shouldTrigger": false,
+      "clause": "targeting",
+      "shares": "campaign and targeting",
+      "borrows": "targeting",
+      "note": "Competitive intelligence research is market analysis; the skill manages your own Apple Ads"
+    },
+    {
+      "id": "q30",
+      "query": "Write a tool to automatically convert all my v5 campaign scripts to v1 in one batch",
+      "shouldTrigger": false,
+      "clause": "v5 migration",
+      "shares": "v5 campaign scripts to v1",
+      "borrows": "v5 migration",
+      "note": "Building batch conversion tooling is development work; the skill provides v1 migration guidance command by command"
+    }
+  ]
+}

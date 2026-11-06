@@ -1,0 +1,133 @@
+{
+  "schema": "skillgauntlet/run/1",
+  "runId": "20261106-230804",
+  "runnerVersion": "1.4.2",
+  "skill": "asc-apple-ads",
+  "host": "claude-code",
+  "backend": "anthropic",
+  "model": "haiku",
+  "runs": 1,
+  "maxExplore": 0,
+  "depth": {
+    "id": "quick",
+    "perClause": 2,
+    "negatives": 10
+  },
+  "querySets": [
+    {
+      "id": "main",
+      "source": "cache",
+      "file": "queries-2x10.json",
+      "queries": 30,
+      "clauses": 10,
+      "sha256": "5e4284dcf49b8353",
+      "negativesQuality": {
+        "total": 10,
+        "weak": 1
+      }
+    }
+  ],
+  "skillFingerprint": "2dd8b220d439d212",
+  "platform": "linux 6.8.0-138-generic / Node v18.20.8",
+  "startedAt": "2026-11-06T14:08:04.375Z",
+  "finishedAt": "2026-11-06T14:09:28.540Z",
+  "trials": 30,
+  "interrupted": false,
+  "modelResolved": "claude-haiku-4-5-20251001",
+  "apiKeySource": "none",
+  "claudeCodeVersion": "2.1.197",
+  "loadedSkills": [
+    "asc-apple-ads",
+    "design-sync",
+    "update-config",
+    "verify",
+    "debug",
+    "code-review",
+    "simplify",
+    "batch",
+    "fewer-permission-prompts",
+    "loop",
+    "schedule",
+    "claude-api",
+    "run",
+    "run-skill-generator"
+  ],
+  "tools": [
+    "Bash",
+    "CronCreate",
+    "CronDelete",
+    "CronList",
+    "DesignSync",
+    "Edit",
+    "EnterWorktree",
+    "ExitWorktree",
+    "Monitor",
+    "NotebookEdit",
+    "PushNotification",
+    "Read",
+    "RemoteTrigger",
+    "ReportFindings",
+    "ScheduleWakeup",
+    "SendMessage",
+    "Skill",
+    "Task",
+    "TaskCreate",
+    "TaskGet",
+    "TaskList",
+    "TaskOutput",
+    "TaskStop",
+    "TaskUpdate",
+    "ToolSearch",
+    "WebFetch",
+    "WebSearch",
+    "Write"
+  ],
+  "submission": {
+    "schema": "skillgauntlet/submission/1",
+    "contributor": "he-qizheng",
+    "skill": {
+      "name": "asc-apple-ads",
+      "repo": "https://github.com/rorkai/app-store-connect-cli-skills",
+      "commit": "7de1ef7cc831f62d205dfa589063f3831f66391b",
+      "subdir": "skills/asc-apple-ads",
+      "skillMdSha256": "2dd8b220d439d2120f676469bcd86788b378e096a90ab7884a4d8d4ae518d60a"
+    },
+    "host": {
+      "id": "claude-code",
+      "version": "2.1.197"
+    },
+    "model": {
+      "requested": "haiku",
+      "resolved": "claude-haiku-4-5-20251001"
+    },
+    "queryPack": {
+      "id": "main",
+      "sha256": "5e4284dcf49b83534c45c4d0ad5676456246df269664b89515d6e487a43061f9",
+      "queries": 30
+    },
+    "environment": {
+      "id": "134e5d5155c5",
+      "platform": "linux 6.8.0-138-generic / Node v18.20.8",
+      "hostVersion": "2.1.197",
+      "backend": "anthropic",
+      "loadedSkills": [
+        "asc-apple-ads",
+        "batch",
+        "claude-api",
+        "code-review",
+        "debug",
+        "design-sync",
+        "fewer-permission-prompts",
+        "loop",
+        "run",
+        "run-skill-generator",
+        "schedule",
+        "simplify",
+        "update-config",
+        "verify"
+      ],
+      "toolCount": 28
+    },
+    "submittedAt": "2026-11-06T14:09:48Z"
+  }
+}
