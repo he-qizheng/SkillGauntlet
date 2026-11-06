@@ -1,0 +1,167 @@
+{
+  "schema": "skillgauntlet/queries/1",
+  "queries": [
+    {
+      "id": "q01",
+      "query": "帮我把 App.xcarchive 用 asc distribute 分发给已注册的设备，不要走 TestFlight",
+      "shouldTrigger": true,
+      "clause": "Distribute IPA to registered devices outside TestFlight",
+      "shares": "",
+      "borrows": "",
+      "note": "Existing archive, registered devices, explicitly outside TestFlight via asc distribute."
+    },
+    {
+      "id": "q02",
+      "query": "use asc distribute to send this IPA to our registered testers outside TestFlight",
+      "shouldTrigger": true,
+      "clause": "Distribute IPA to registered devices outside TestFlight",
+      "shares": "",
+      "borrows": "",
+      "note": "Private IPA install to registered devices, not Apple-hosted distribution."
+    },
+    {
+      "id": "q03",
+      "query": "用 asc distribute 重新对账一下我们的 ad hoc 描述文件，有漂移的修一下",
+      "shouldTrigger": true,
+      "clause": "Reconcile ad hoc profiles",
+      "shares": "",
+      "borrows": "",
+      "note": "Reconciling drifted ad hoc provisioning profiles via asc distribute."
+    },
+    {
+      "id": "q04",
+      "query": "reconcile our ad hoc provisioning profiles with asc distribute before the next publish",
+      "shouldTrigger": true,
+      "clause": "Reconcile ad hoc profiles",
+      "shares": "",
+      "borrows": "",
+      "note": "Explicit profile reconciliation task owned by this skill."
+    },
+    {
+      "id": "q05",
+      "query": "通过我们自己搭的 S3 兼容存储，用 asc distribute 发布这个私有安装链接",
+      "shouldTrigger": true,
+      "clause": "Publish through caller-owned S3-compatible storage",
+      "shares": "",
+      "borrows": "",
+      "note": "Publishing private install link through caller-owned S3-compatible storage."
+    },
+    {
+      "id": "q06",
+      "query": "publish the private install link through our caller-owned S3-compatible bucket using asc distribute",
+      "shouldTrigger": true,
+      "clause": "Publish through caller-owned S3-compatible storage",
+      "shares": "",
+      "borrows": "",
+      "note": "Private publication via asc distribute to owned S3-compatible bucket."
+    },
+    {
+      "id": "q07",
+      "query": "asc distribute 的私有分发 run 卡在 recoverable 状态了，帮我诊断能不能 resume",
+      "shouldTrigger": true,
+      "clause": "Diagnose resumable private distribution run",
+      "shares": "",
+      "borrows": "",
+      "note": "Diagnosing a resumable private distribution run stuck in recoverable state."
+    },
+    {
+      "id": "q08",
+      "query": "diagnose this resumable private distribution run that failed midway with asc distribute",
+      "shouldTrigger": true,
+      "clause": "Diagnose resumable private distribution run",
+      "shares": "",
+      "borrows": "",
+      "note": "Mid-run failure diagnosis of a resumable private distribution."
+    },
+    {
+      "id": "q09",
+      "query": "帮我把这个 IPA 传到 TestFlight 让内部测试人员安装",
+      "shouldTrigger": false,
+      "clause": "Distribute IPA to registered devices outside TestFlight",
+      "shares": "IPA",
+      "borrows": "distributing an IPA to registered devices",
+      "note": "TestFlight is explicitly another skill's job (Apple-hosted distribution)."
+    },
+    {
+      "id": "q10",
+      "query": "把这个 IPA 提交到 App Store 审核，发给外部用户下载",
+      "shouldTrigger": false,
+      "clause": "Distribute IPA to registered devices outside TestFlight",
+      "shares": "IPA",
+      "borrows": "distributing an IPA to registered devices",
+      "note": "App Store release is a sibling skill, not private registered-device distribution."
+    },
+    {
+      "id": "q11",
+      "query": "帮我把这个 IPA 做成二维码，发给所有人扫码直接安装",
+      "shouldTrigger": false,
+      "clause": "Distribute IPA to registered devices outside TestFlight",
+      "shares": "IPA",
+      "borrows": "distributing an IPA to registered devices",
+      "note": "Unregistered public/enterprise-style mass install, not registered-device private distribution."
+    },
+    {
+      "id": "q12",
+      "query": "帮我在 Apple Developer 后台手动新建一个 ad hoc 描述文件",
+      "shouldTrigger": false,
+      "clause": "Reconcile ad hoc profiles",
+      "shares": "ad hoc 描述文件",
+      "borrows": "reconciling ad hoc profiles",
+      "note": "Manually creating a profile in the portal is a different job, not asc distribute reconcile."
+    },
+    {
+      "id": "q13",
+      "query": "用 fastlane match 来同步团队的 provisioning profiles",
+      "shouldTrigger": false,
+      "clause": "Reconcile ad hoc profiles",
+      "shares": "provisioning profiles",
+      "borrows": "reconciling ad hoc profiles",
+      "note": "fastlane match is a sibling tool, not asc distribute profile reconciliation."
+    },
+    {
+      "id": "q14",
+      "query": "用 aws s3 cp 把构建产物传到我们的 S3 桶里做备份",
+      "shouldTrigger": false,
+      "clause": "Publish through caller-owned S3-compatible storage",
+      "shares": "S3",
+      "borrows": "S3-compatible storage",
+      "note": "Copying artifacts to S3 for backup, not publishing a private install link via asc distribute."
+    },
+    {
+      "id": "q15",
+      "query": "在 S3 兼容存储上把这个 bucket 的公开访问策略配置好",
+      "shouldTrigger": false,
+      "clause": "Publish through caller-owned S3-compatible storage",
+      "shares": "S3 兼容存储",
+      "borrows": "S3-compatible storage",
+      "note": "Changing bucket policy is explicitly out of scope for the skill."
+    },
+    {
+      "id": "q16",
+      "query": "通过我们自己的 S3 把 Android 的 APK 发布给测试机",
+      "shouldTrigger": false,
+      "clause": "Publish through caller-owned S3-compatible storage",
+      "shares": "S3",
+      "borrows": "S3-compatible storage",
+      "note": "Android APK distribution, not iOS IPA private publishing via asc distribute."
+    },
+    {
+      "id": "q17",
+      "query": "asc distribute 跑完了，但 app 装到设备上闪退，帮我排查原因",
+      "shouldTrigger": false,
+      "clause": "Diagnose resumable private distribution run",
+      "shares": "asc distribute",
+      "borrows": "private distribution run",
+      "note": "Diagnosing device install/launch failure — the skill explicitly does not cover this."
+    },
+    {
+      "id": "q18",
+      "query": "这次 CI 的 fastlane 分发任务卡住了，帮我看看 pipeline 日志",
+      "shouldTrigger": false,
+      "clause": "Diagnose resumable private distribution run",
+      "shares": "分发",
+      "borrows": "private distribution run",
+      "note": "fastlane distribution pipeline is a sibling job, not an asc distribute run."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "trials": 18,
+  "recall": 1,
+  "fpr": 0.2,
+  "noToolRate": 0,
+  "questions": [
+    {
+      "query": "use asc distribute to send this IPA to our registered testers outside TestFlight",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "帮我把 App.xcarchive 用 asc distribute 分发给已注册的设备，不要走 TestFlight",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "用 asc distribute 重新对账一下我们的 ad hoc 描述文件，有漂移的修一下",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "reconcile our ad hoc provisioning profiles with asc distribute before the next publish",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "通过我们自己搭的 S3 兼容存储，用 asc distribute 发布这个私有安装链接",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "publish the private install link through our caller-owned S3-compatible bucket using asc distribute",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "asc distribute 的私有分发 run 卡在 recoverable 状态了，帮我诊断能不能 resume",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "diagnose this resumable private distribution run that failed midway with asc distribute",
+      "shouldTrigger": true,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "帮我把这个 IPA 传到 TestFlight 让内部测试人员安装",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    },
+    {
+      "query": "把这个 IPA 提交到 App Store 审核，发给外部用户下载",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    },
+    {
+      "query": "帮我把这个 IPA 做成二维码，发给所有人扫码直接安装",
+      "shouldTrigger": false,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "帮我在 Apple Developer 后台手动新建一个 ad hoc 描述文件",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    },
+    {
+      "query": "用 fastlane match 来同步团队的 provisioning profiles",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    },
+    {
+      "query": "用 aws s3 cp 把构建产物传到我们的 S3 桶里做备份",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    },
+    {
+      "query": "通过我们自己的 S3 把 Android 的 APK 发布给测试机",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    },
+    {
+      "query": "在 S3 兼容存储上把这个 bucket 的公开访问策略配置好",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    },
+    {
+      "query": "asc distribute 跑完了，但 app 装到设备上闪退，帮我排查原因",
+      "shouldTrigger": false,
+      "hits": 1,
+      "n": 1
+    },
+    {
+      "query": "这次 CI 的 fastlane 分发任务卡住了，帮我看看 pipeline 日志",
+      "shouldTrigger": false,
+      "hits": 0,
+      "n": 1
+    }
+  ],
+  "failedTrials": 0,
+  "incomplete": 0,
+  "model": "hy3",
+  "backend": "codebuddy",
+  "host": "codebuddy",
+  "runs": 1,
+  "recallCi": [
+    0.6755843804891231,
+    1
+  ],
+  "fprCi": [
+    0.056680947980693314,
+    0.5098431532792765
+  ]
+}
